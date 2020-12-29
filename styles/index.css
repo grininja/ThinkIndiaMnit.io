@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+  
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  background-color: black;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  
+
+
+.intro {
+  background: #F45B69;
+  padding: 50px 0;
+  margin-top: 20px;
+  margin-bottom:0;
+  /* border-radius: 50px; */
+  /* font: size 20px; */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.timeline{
+  border-radius: 50px;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background:url("../images/1.png");
+  padding: 50px 0;
+  
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: black;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #FFA500;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: green;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.about  {
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:10 0 10 0;
+}
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+span{
+  padding-left:20px;
+}
+
+
+
+.thinkindia {
+  display: flex;
+  /* align-items: flex-start; */
+  align-items: center;
+  padding: left 10px;
+
+
+
+}
+
+.mnit {
+  display: flex;
+  /* align-items: flex-end; */
+  align-items: center;
+}
+
+.logocontainer img {
+  max-height: 100px;
+  float: left;
+}
+
+.logocontainer {
+  display: flex;
+  /* flex-direction:column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color:white;
+  font-family: "Audiowide", cursive;
+  font-size: larger;
+  /* background-color: white; */
+  background: linear-gradient(-45deg,#d9a7c7, #7F00FF, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  
+}
+
+
+.honey{
+ 
+  /* background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+
+
+/* border-radius: 50px; */
+
+}
+.purpose{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 40px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+.lowreso {
+  display: none;
+}
+/* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+color:transparent;
+background-color:transparent;
+border-color: transparent;
+
+}
+.nav-tabs .nav-link{
+  margin-bottom: 0;   
+   border: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+} */
+/* .crous{
+     display: flex;
+   justify-content: center; 
+    height: fit-content;
+   width:fit-content;
+ }  */
+ .navbar {
+  padding: 0 0 4.5rem;
+  /* z-index: -2; */
+  
+}
+
+ .nav-item {
+  padding: 0 18px;
+  font-size: larger;
+  font-weight:bold;
+  
+}
+
+ .carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+#scene {
+  background-color: black;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  user-select:none;
+}
+section{
+  color: white;
+  font-weight:bold;
+  background-color:black;
+  margin-bottom:20px;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+a{
+  text-decoration:none;
+}
+
+
+@media only screen and (max-width: 1026px) {
+  .mnit {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
