@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.head_section{
+    background-color: rgb(255, 244, 234);
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.head_seater{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.head_section img{
+    width: 60px;
+    margin:0px 20px;
+} 
+.head_section h2{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: rgb(141, 99, 22);
+} 
+
+/* new sections */
+.section_heading{
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('image/enter_1.svg');
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.heading_ h1{
+    font-size: 60px;
+    line-height: 1.5;
+    color: rgb(255, 115, 0);
+    text-shadow: white 1px 1px 0.5px ;
+} 
+.heading_{
+    font-size: 20px;
+    color: blanchedalmond;
+    text-align: center;
+} 
+
+/* sec1 */
+.sec_sec1{
+    background: linear-gradient(to top left, #e8fff4 0%, #ffffdd 100%);
+   
+}
+.about_para{
+    margin: auto;
+    padding: 40px 20px;
+    width: 85vw;
+    text-align: justify;
+}
+.about_para p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(59, 59, 59);
+    line-height: 1.4;
+    
+}
+.about_spa{
+    font-size: 25px;
+    line-height:2;
+    color: darkorange;
+}
+/* section2 */
+
+.sec_sec2{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.inchare_babu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.incharge h2{
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+}
+.line_ani{
+    background-color: darkorange;
+    width: 15vw;
+    height: 4px;
+}
+.section_incharge{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.both_inchare{
+    margin: 50px;
+    background-color: rgb(235, 235, 235);
+    width: 24vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 4px solid darkorange;
+    border-left: 4px solid darkorange;
+    justify-content: center;
+    box-shadow: black .1px .1px 5px;
+}
+.both_inchare:hover{
+    
+    box-shadow: black .1px .1px 7px;
+}
+.both_inchare img{
+    margin: 10px 10px;
+    height: 100px;
+    width: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.incharge_name h3{
+    line-height: 2;
+}
+.foot{
+    color:orange;
+    text-align: center;
+}
+.foot p{
+    padding: 30px;
+}

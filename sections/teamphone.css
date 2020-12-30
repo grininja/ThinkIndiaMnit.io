@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.heading_state p{
+    text-align: center;
+    
+}
+.five_team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 30vw;
+    border-radius: 50%;
+    border: rgb(255, 154, 1) 10px solid;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 70vw;
+    text-align: center;
+    font-family: arial;
+    margin: 40px 2vw;
+}
