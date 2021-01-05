@@ -101,6 +101,12 @@
     color: rgb(59, 59, 59);
     line-height: 1.4;
 }
+.point-wise{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(59, 59, 59);
+    line-height: 1.4;
+}
 .about_para p{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
