@@ -61,3 +61,6 @@
     justify-content: center;
     box-shadow: black .1px .1px 5px;
 }
+.section_incharge{
+    align-items: center;
+}
