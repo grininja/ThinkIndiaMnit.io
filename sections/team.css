@@ -6,24 +6,28 @@
     margin: 13px;
     margin-top: 0px;
 } */
-#head{
-    padding: 15px;
-    text-align: center;
-    background-color: antiquewhite;  
-
+.head_section{
+    background-color: rgb(255, 244, 234);
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    left: 0px;
 }
-#logoimage img{
-    margin:0px 4vw;
-    height: 100px;
+.head_seater{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
-#tiheading h1{
+.head_section img{
+    width: 60px;
+    margin:0px 20px;
+} 
+.head_section h2{
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 40px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
+    color: rgb(141, 99, 22);
+} 
 /* new section */
 .team_heading{
     height: 30vh; 
@@ -67,7 +71,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 17vw;
     text-align: center;
-    font-family: arial;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(51, 51, 51);
     margin: 40px 2vw;
 }
 .card img{
@@ -76,7 +81,7 @@
      border: rgb(255, 154, 1) 10px solid;
 }
 .card h1,p{
-    line-height: 1.3;
+    line-height: 1.5;
 } 
   .title {
     color: grey;
@@ -133,4 +138,9 @@
 .tablecontact{
     color: black;
     font-size: 16px;
+}
+#visit-home-page{
+    font-size: 15px;
+    padding: 10px;
+    color: blue;
 }
